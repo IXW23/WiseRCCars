@@ -15,8 +15,7 @@ public abstract class RCCar {
         this.charger = charger;
     }
 
-    public abstract String getWheelType();
-    public abstract String getTireType();
+    public abstract String getWheelsAndTiresType();
     public abstract String getBodyFrameType();
     public abstract String getShocksType();
     public abstract String getMotorType();
@@ -27,6 +26,10 @@ public abstract class RCCar {
 
     public void chooseFrameColor(FrameColors color) {
         this.color = color;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 
     public String getSerialNumber() {
@@ -49,7 +52,7 @@ public abstract class RCCar {
         return charger;
     }
 
-    public BigDecimal getOptionAmount() {
+    public BigDecimal getOptionPrice() {
         return BigDecimal.valueOf(0.0);
     }
 
